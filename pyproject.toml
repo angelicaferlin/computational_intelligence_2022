@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "pypoetry"
+version = "1.0"
+description = "poetry file"
+authors = ["angelica <angelica.ferlin@gmail.com>"]
+license = "Unlicense"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
