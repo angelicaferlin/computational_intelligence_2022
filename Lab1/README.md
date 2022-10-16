@@ -1,4 +1,6 @@
 # LAB 1
+Angelica Ferlin, 2022<br />
+<br />
 [Link to instructions](https://github.com/squillero/computational-intelligence/blob/master/2022-23/lab1_set-covering.ipynb)
 
 ## Collaboration
