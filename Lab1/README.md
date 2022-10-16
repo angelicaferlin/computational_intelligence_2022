@@ -2,7 +2,7 @@
 [Link to instructions](https://github.com/squillero/computational-intelligence/blob/master/2022-23/lab1_set-covering.ipynb)
 
 ## Collaboration
-I worked together with Karl Wennerström, Erik Bengtsson and Mathias Schmekel where we discussed the problem and possible solutions. I also collaborated with Leonor Gomes by discussing our results and exchanging ideas.
+I worked together with Karl Wennerström, Erik Bengtsson and Mathias Schmekel where we discussed the problem and possible solutions as well as collaborating on the code. I also collaborated with Leonor Gomes by discussing our results and exchanging ideas.
 
 I also took inspiration from the solutions to different problems provided by professor Giovanni Squillero in the GitHub repository "computational-intelligence". Specifically, the solution called "8-puzzle.ipynb" and "4-friends.ipynb".
 
