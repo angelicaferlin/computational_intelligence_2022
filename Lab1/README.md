@@ -23,13 +23,14 @@ INFO:root: Solution found for N=500: w=1375: visited nodes=7: (bloat=175%)<br />
 INFO:root: Solution found for N=1000: w=3087: visited nodes=8: (bloat=209%)<br />
 
 ### Result from running the seach algorithm using: %timeit search(1_000)
-INFO:root: Solution found for N=1000: w=3091: visited nodes=8: (bloat=209%)<br />
-INFO:root: Solution found for N=1000: w=3039: visited nodes=8: (bloat=204%)<br />
-INFO:root: Solution found for N=1000: w=3384: visited nodes=9: (bloat=238%)<br />
-INFO:root: Solution found for N=1000: w=3028: visited nodes=8: (bloat=203%)<br />
-INFO:root: Solution found for N=1000: w=3049: visited nodes=8: (bloat=205%)<br />
-INFO:root: Solution found for N=1000: w=3159: visited nodes=8: (bloat=216%)<br />
-INFO:root: Solution found for N=1000: w=3091: visited nodes=8: (bloat=209%)<br />
-INFO:root: Solution found for N=1000: w=3088: visited nodes=8: (bloat=209%)<br />
-2.45 s ± 1.04 s per loop (mean ± std. dev. of 7 runs, 1 loop each)
+INFO:root: Solution found for N=1000: w=3042: visited nodes=8: (bloat=204%)<br />
+INFO:root: Solution found for N=1000: w=3086: visited nodes=8: (bloat=209%)<br />
+INFO:root: Solution found for N=1000: w=3055: visited nodes=8: (bloat=206%)<br />
+INFO:root: Solution found for N=1000: w=3082: visited nodes=8: (bloat=208%)<br />
+INFO:root: Solution found for N=1000: w=3114: visited nodes=8: (bloat=211%)<br />
+INFO:root: Solution found for N=1000: w=3127: visited nodes=8: (bloat=213%)<br />
+INFO:root: Solution found for N=1000: w=2986: visited nodes=8: (bloat=199%)<br />
+INFO:root: Solution found for N=1000: w=3405: visited nodes=9: (bloat=240%)<br />
+2.08 s ± 450 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
+
 
