@@ -44,6 +44,9 @@ The rules whoose parameters are evolved:
 4. Repeat 2-3 steps GENERATION amount of times
 5. The rules of the best individuals become the stratetgy.
 
+### Possible improvements (that I did not have time to implement)
+1. Try different rules and add more
+2. Create an agent class that keeps track of the rules -> will probably be easier to understand the code and add/remove rules
 
 ### Min-Max
 For the min-max a lot of code and inspiration was taken from this article
