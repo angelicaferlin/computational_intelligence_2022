@@ -62,7 +62,11 @@ For the min-max a lot of code and inspiration was taken from this article
 [Min-max article with code example](https://realpython.com/python-minimax-nim/). For some reason I don't understand, the minimax_pruning is not working. 
 
 ### An agent using reinforcement learning (Q-learning)
-The reinforcement learning agent is using a q-learning algorithm where the exploration rate is decreasing during the training. The agent is trained against 5 different opponents which ranges from dumb to optimal. <br />
+The reinforcement learning agent is using a q-learning algorithm where the exploration rate is decreasing during the training. The agent is trained against 5 different opponents which ranges from dumb to optimal. The structure of the q-learner is a hashmap that looks like the following:
+``
+{(state_rows: list, move: tuple(row, elem)): int}
+´´´
+The key contains the current state as a list as well as one possible move for that state, the value is then the q-value given by the q-learning algorithm. 
 
 The Q-learner wins some games against the optimal strategy after the training. <br />
 The following links where used to create this agent and the code was heavily inspired by the two code examples.

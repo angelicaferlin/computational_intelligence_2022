@@ -88,7 +88,7 @@ class QLearner:
 
           maxQ = max([self.q[(current_state.rows, move)] for move in possible_moves]) #max q-value from the possible moves of the current_state
 
-          
+          # updates the q-value according to the q-learning algorithm
           self.q[(self.previous_state, self.previous_move)] += \
                     self.learning_rate * (reward + (self.discount_rate * maxQ) - \
                     self.q[(self.previous_state, self.previous_move)])
