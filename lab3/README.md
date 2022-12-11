@@ -1,5 +1,4 @@
 # Lab 3
-
 ## Colaborators and co-authors
 I colaborated and wrote the code together with Leonor Gomes, Mathias Schmekel, Karl Wennerström and Erik Bengtsson.
 
@@ -7,8 +6,18 @@ I colaborated and wrote the code together with Leonor Gomes, Mathias Schmekel, K
 A big part of the professor's code was used and inspiration was taken from it. 
 [Code from professor](https://github.com/squillero/computational-intelligence/blob/master/2022-23/lab3_nim.ipynb)
 
-## Evolutionary algorithm
+# Structure of folder
+Files and explanations:
+- battleground.py -> the file that plays the game of nim with all the agents that were created for this lab
+- other_agents.py -> contains the hardcoded-agent and expert agent for task 3.1 as well as some other agents
+- utils.py -> contains the Nim-class as well as other helpfunction
+- genetic_algorithm.py -> contains the evolved agent for task 3.2
+- min_max_agent.py -> contains the min_max-agent
+- reinforcement_learning.py -> contains the q-learning agnet
+- lab3.ipynb -> was used to create 3.1 and 3.2 before refactoring the code and using the "battleground"
+- q-learning.ipynb -> was used to create the q-learner, not used anymore since the "reinforcement_learning.py" took its place
 
+## Evolutionary algorithm
 ### Rules
 Structure of an individual:
 ```
@@ -44,26 +53,21 @@ The rules whoose parameters are evolved:
 4. Repeat 2-3 steps GENERATION amount of times
 5. The rules of the best individuals become the stratetgy.
 
-### Possible improvements (that I did not have time to implement)
-1. Try different rules and add more
+### Possible improvements
+1. Try different rules and add more rules
 2. Create an agent class that keeps track of the rules -> will probably be easier to understand the code and add/remove rules
 
 ### Min-Max
 For the min-max a lot of code and inspiration was taken from this article
-[Min-max article with code example](https://realpython.com/python-minimax-nim/)
+[Min-max article with code example](https://realpython.com/python-minimax-nim/). For some reason I don't understand, the minimax_pruning is not working. 
 
-### Q-learning
+### An agent using reinforcement learning (Q-learning)
+The reinforcement learning agent is using a q-learning algorithm where the exploration rate is decreasing during the training. The agent is trained against 5 different opponents which ranges from dumb to optimal. <br />
+
+The Q-learner wins some games against the optimal strategy after the training. <br />
+The following links where used to create this agent and the code was heavily inspired by the two code examples.
 [Article](https://andrewrowell.blog/2020/05/19/q-learning-nim-with-python/) <br />
 [Example of code](https://github.com/abelmariam/nimPy/blob/master/Agent.py) <br />
+[Example of code](https://github.com/abelmariam/nimPy) <br />
 [Wiki: q-learning](https://en.wikipedia.org/wiki/Q-learning)<br />
 [Master theisis on q-learning and nim](https://www.csc.kth.se/utbildning/kth/kurser/DD143X/dkand11/Group6Lars/erik.jarleberg.report.pdf)<br />
-[Book on RL](http://incompleteideas.net/book/RLbook2020.pdf)<br />
-
-## Task 3.1 - Agent with fixed rules
-
-
-## Task 3.2 - Evolved Agent
-
-## Task 3.3 - Min-max Agent
-
-## Task 3.4 - Agent using reinforcement learning with Q-learning and off-policy mechanism
