@@ -123,6 +123,7 @@ def make_strategy(genome: dict) -> Callable:
 
 #compute the fittness
 def head2head(pl: dict, opponent: Callable, nim_size: int) -> int:
+    """Runs a game of nim between one individual from the population and the opponent"""
     nim = Nim(nim_size)
 
     players = (make_strategy(pl), opponent)
@@ -137,7 +138,6 @@ def head2head(pl: dict, opponent: Callable, nim_size: int) -> int:
     winner = 1 - player
     
     if winner == 0: # if the player (pl) wins, return 1 to calculate fitness
-        #pl["fitness"] +=1
         logging.debug('Player won over opponent')
         return 1
     else:

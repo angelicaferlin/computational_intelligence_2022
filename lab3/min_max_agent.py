@@ -66,6 +66,8 @@ def best_move(state_as_list: list, player: int) -> tuple:
     
 
 def minimax_pruning(state_as_list: list, is_maximizing: bool, alpha=-1, beta=1) -> int:
+    """Not working as intended.
+    The idea is that this function only explores the nessecary nodes using alpha-beta pruning"""
     if (score := evaluate(state_as_list, is_maximizing)) is not None: 
         # if the game is over
         return score
@@ -88,7 +90,9 @@ def minimax_pruning(state_as_list: list, is_maximizing: bool, alpha=-1, beta=1) 
 
 
 def best_move_pruning(state_as_list: list, player: int) -> tuple:
-    """ """
+    """Not working as intended.
+    Should provide the best move using minimax_pruning
+    """
     if player == 0: # maximizing
         return max(
             (minimax_pruning(new_state, is_maximizing=False), new_state)
@@ -102,7 +106,7 @@ def best_move_pruning(state_as_list: list, player: int) -> tuple:
 
 
 def nimply_move(current_state: Nim, new_state: list) -> Nimply:
-    
+    """Creates the Nimply by checkig the difference between the current state and the new state we get after the desired move"""
     diff = 0
     row = len(current_state.rows) #invalid row
     
@@ -116,17 +120,9 @@ def nimply_move(current_state: Nim, new_state: list) -> Nimply:
 
     return ply
 
-    
-
-
-
-def minimax_agent(state: Nim):
-  _, new_state = best_move(state._rows, 0)
-  return nimply_move(state, new_state)
-
 
 def min_max_agent(state: Nim):
-
+    """Returns the best move from a state usin min-max"""
     state_as_list = [] # convert the state to list to easier handle the recursion later on
 
     for i in range(len(state.rows)):
@@ -134,7 +130,7 @@ def min_max_agent(state: Nim):
 
     logging.debug(f"State as a list: {state_as_list}")
 
-    #best_m = best_move_pruning(state_as_list, player=0)
+    #best_m = best_move_pruning(state_as_list, player=0) 
     best_m = best_move(state_as_list=state_as_list, player=0)
 
     move = best_m[1] # since best_move = (score, [new state])

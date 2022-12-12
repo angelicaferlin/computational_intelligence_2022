@@ -18,7 +18,7 @@ class QLearner:
        #in practice, often a constant learning rate is used
        self.learning_rate = learning_rate
        
-       #starting with a lower discont factor and increasing it towards its final value acelerates learning
+       #starting with a lower discount factor and increasing it towards its final value acelerates learning
        self.discount_rate = discount_rate
        
        #try to reduce the exploration rate while we are training the q-learner 
